@@ -11,6 +11,6 @@ public class Test {
 		
 		num.stream().filter(n->n!=3).map(n->n*n).collect(Collectors.toList()).forEach(System.out::println);
 		
-		System.out.println("Sum="+num.stream().reduce(0,Integer::sum));
+		System.out.println("Total = "+num.stream().reduce(0,Integer::sum));
 	}
 }
